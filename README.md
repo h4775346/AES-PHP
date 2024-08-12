@@ -5,5 +5,6 @@ Example usage
 ```
 $data = ["name"=>"abanoub"];
 $encSecret = "abcdefg112233445566";
-AES::encrypt(json_encode($data), $encSecret);
+$encrypted = AES::encrypt(json_encode($data), $encSecret);
+echo "encrypted data is $encrypted";
 ```
